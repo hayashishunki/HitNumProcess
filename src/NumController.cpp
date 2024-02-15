@@ -8,12 +8,12 @@ NumController::NumController() : user_(nullptr), correctFlag_(false) {};
 // destructor
 NumController::~NumController() {};
 
-// User‚Ìİ’è
+// Userã®è¨­å®š
 void NumController::setUser(User *user) {
 	user_ = user;
 }
 
-// “ü—Í’l‚Ì—LŒøA–³Œø’l”»’è
+// å…¥åŠ›å€¤ã®æœ‰åŠ¹ã€ç„¡åŠ¹å€¤åˆ¤å®š
 void NumController::isAvailable() {
 	correctFlag_ = true;
 	for (int i = 0; i < user_->getNum().length(); i++) {
@@ -46,12 +46,12 @@ void NumController::isAvailable() {
 	if (true == correctFlag_) {
 		user_->setNum(user_->getNum());
 	} else {
-		cout << "“ü—Í‚ÉŠÔˆá‚¦‚ª‚ ‚è‚Ü‚·BÅ‰‚©‚ç‚â‚è’¼‚µ‚Ä‚­‚¾‚³‚¢" << endl;
+		cout << "å…¥åŠ›ã«é–“é•ãˆãŒã‚ã‚Šã¾ã™ã€‚æœ€åˆã‹ã‚‰ã‚„ã‚Šç›´ã—ã¦ãã ã•ã„" << endl;
 		exit(EXIT_FAILURE);
 	}
 };
 
-// “ü—Í’l‚Ì“Á’è
+// å…¥åŠ›å€¤ã®ç‰¹å®š
 void NumController::identifyInputValue() {
 	correctFlag_ = false;
 	int tryValue = 0;

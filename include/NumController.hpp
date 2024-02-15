@@ -15,12 +15,12 @@ public:
 	// destructor
 	~NumController();
 
-	// User‚Ìİ’è
+	// Userã®è¨­å®š
 	void setUser(User *user);
 
-	// —LŒøA–³Œø’l”»’è
+	// æœ‰åŠ¹ã€ç„¡åŠ¹å€¤åˆ¤å®š
 	void isAvailable();
 
-	// “ü—Í’l‚Ì“Á’è
+	// å…¥åŠ›å€¤ã®ç‰¹å®š
 	void identifyInputValue();
 };

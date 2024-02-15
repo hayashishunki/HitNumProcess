@@ -25,6 +25,6 @@ public:
 	string getNum();
 	int getCorrectNum();
 
-	// o—Í
+	// æƒ…å ±å‡ºåŠ›
 	void showUserNum();
 };
