@@ -14,7 +14,9 @@ int main() {
 	user->setName(name);
 	user->setNum(num);
 	numController->setUser(user);
+	// 入力値チェック
 	numController->isAvailable();
+	// 入力値判定
 	numController->identifyInputValue();
 	delete numController;
 	return 0;
